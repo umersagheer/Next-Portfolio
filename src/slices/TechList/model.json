@@ -1,0 +1,42 @@
+{
+  "id": "tech_list",
+  "type": "SharedSlice",
+  "name": "TechList",
+  "description": "TechList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "techimage": {
+          "type": "Image",
+          "config": {
+            "label": "TechImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "techname": {
+          "type": "Text",
+          "config": {
+            "label": "TechName",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -20,10 +20,10 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr] place-items-center md:place-items-start">
-        <Heading as="h1" size="xl" className="col-start-1">
+        <Heading as="h1" size="lg" className="col-start-1">
           {slice.primary.heading}
         </Heading>
-        <div className="prose prose-xl prose-slate prose-invert col-start-1">
+        <div className="prose prose-lg prose-slate prose-invert col-start-1">
           <PrismicRichText field={slice.primary.description} />
         </div>
 
@@ -34,7 +34,7 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
 
         <Avatar
           image={slice.primary.avatar}
-          className="row-start-1 max-w-sm md:col-start-2 md:row-end-3"
+          className="row-start-1 max-w-xs md:col-start-2 md:row-end-3"
         />
       </div>
     </Bounded>
