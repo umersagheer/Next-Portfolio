@@ -79,13 +79,13 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
                 className="flex flex-col justify-center items-center gap-2 "
                 style={{
                   scale: index === 12 ? "1.3" : "1",
-                  opacity: index === 12 ? "1" : "0.4",
+                  opacity: index === 12 ? "1" : "0.2",
                 }}
               >
-                <div className="w-10 md:w-16 aspect-square">
+                <div className="w-10 md:w-12 aspect-square">
                   <PrismicNextImage
                     field={techimage}
-                    className="avatar-image h-full w-full object-fill"
+                    className="avatar-image h-full w-full object-cover"
                     imgixParams={{ q: 90 }}
                   />
                 </div>
